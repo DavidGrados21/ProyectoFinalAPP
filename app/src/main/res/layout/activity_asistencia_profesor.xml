@@ -1,0 +1,35 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fondo"
+    android:layout_marginTop="40dp"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvCursoInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="  ASISTENCIAS DEL CURSO"
+        android:textColor="#F3A006"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/btnRegistrarAsistencia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#F3A006"
+        android:textColor="@color/black"
+        android:text="Registrar Asistencia" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewAsistencias"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_weight="1"/>
+
+
+</LinearLayout>

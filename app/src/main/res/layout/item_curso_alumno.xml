@@ -1,0 +1,62 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white"
+    android:layout_marginBottom="8dp"
+    android:elevation="2dp">
+
+    <TextView
+        android:id="@+id/tvNombreCurso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Curso Nombre"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#2C3E50"
+        android:layout_marginBottom="4dp"/>
+
+    <TextView
+        android:id="@+id/tvCodigoCurso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Código del Curso"
+        android:textSize="16sp"
+        android:textColor="#7F8C8D"
+        android:layout_marginBottom="4dp"/>
+
+    <TextView
+        android:id="@+id/tvHoraCurso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hora"
+        android:textSize="16sp"
+        android:textColor="#7F8C8D"
+        android:layout_marginBottom="4dp"/>
+
+    <TextView
+        android:id="@+id/tvDiaCurso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Día"
+        android:textSize="16sp"
+        android:textColor="#7F8C8D"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/btnDetallesAsistencia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ver Detalles Asistencia"
+        android:backgroundTint="#DC9105"
+
+        android:layout_marginTop="8dp"
+
+
+
+        android:textColor="#ffffff"
+        android:padding="10dp"/>
+
+</LinearLayout>

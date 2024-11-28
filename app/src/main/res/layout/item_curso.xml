@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:elevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foregroundTint="#6200EA"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Nombre del curso -->
+        <Button
+            android:id="@+id/btnMostrarQR"
+            android:backgroundTint="#DC9105"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="8dp"
+            android:text="QR"
+            android:textColor="@android:color/white"
+            app:icon="@drawable/qr_code_scanner_48px"
+            app:iconPadding="10dp" />
+
+        <TextView
+            android:id="@+id/tvNombreCurso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="Nombre del curso"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Código del curso -->
+        <TextView
+            android:id="@+id/tvCodigoCurso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="Código del curso"
+            android:textSize="16sp" />
+
+        <!-- Hora de inicio y fin -->
+        <TextView
+            android:id="@+id/tvHoraCurso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="Hora de inicio y fin"
+            android:textSize="14sp" />
+
+        <!-- Día de la semana -->
+        <TextView
+            android:id="@+id/tvDiaCurso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Día de la semana"
+            android:textSize="14sp" />
+
+        <!-- Botones "Alumnos" y "Asistencia" alineados horizontalmente -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnAlumnos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:backgroundTint="#DC9105"
+
+                android:text="Alumnos" />
+
+            <Button
+                android:id="@+id/btnAsistencia"
+                android:layout_width="wrap_content"
+                android:backgroundTint="#DC9105"
+
+                android:layout_height="wrap_content"
+                android:text="Asistencia" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

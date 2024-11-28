@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="20dp"
+    android:background="@drawable/fondo"
+    tools:context=".CursoAlumno">
+
+    <!-- Título de la actividad -->
+    <TextView
+        android:id="@+id/tvTituloCurso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mis Cursos"
+        android:textSize="24sp"
+        android:textColor="#F3A006"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Botón para añadir un curso -->
+    <Button
+        android:id="@+id/btnAñadirCurso"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Añadir Curso"
+        android:textSize="16sp"
+        android:textColor="#ffffff"
+android:backgroundTint="#F3A006"
+        android:padding="12dp"
+        android:layout_margin="16dp"
+        app:layout_constraintTop_toBottomOf="@id/tvTituloCurso"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- RecyclerView para mostrar la lista de cursos -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvCursos"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/btnAñadirCurso"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

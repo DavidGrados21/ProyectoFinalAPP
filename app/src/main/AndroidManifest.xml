@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppAsistencia"
+        tools:targetApi="31">
+        <activity
+            android:name=".AsistenciaQrEdit"
+            android:exported="false" />
+        <activity
+            android:name=".DetallesAlumnoAsistencia"
+            android:exported="false" />
+        <activity
+            android:name=".QrAsistencia"
+            android:exported="false" />
+        <activity
+            android:name=".DetallesAlumnosCurso"
+            android:exported="false" />
+        <activity
+            android:name=".AsistenciaProfesor"
+            android:exported="false" />
+        <activity
+            android:name=".DetallesAsistenciaAlumno"
+            android:exported="false" />
+        <activity
+            android:name=".DetallesCursoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AgregarCursoQr"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CursoAlumno"
+            android:exported="false" />
+        <activity
+            android:name=".MostrarQrCurso"
+            android:exported="false" />
+        <activity
+            android:name=".Registrar_Curso"
+            android:exported="false" />
+        <activity
+            android:name=".CursoPorfesor"
+            android:exported="false" />
+        <activity
+            android:name=".EditPerfilProfesor"
+            android:exported="false" />
+        <activity
+            android:name=".EditPerfilAlumno"
+            android:exported="false" />
+        <activity
+            android:name=".HomeProfesor"
+            android:exported="false" />
+        <activity
+            android:name=".HomeAlumno"
+            android:exported="false" />
+        <activity
+            android:name=".MenuRigistro"
+            android:exported="false" />
+        <activity
+            android:name=".Registrar_Profesor"
+            android:exported="false" />
+        <activity
+            android:name=".Registrar_Alumno"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+            android:screenOrientation="portrait"
+            tools:replace="screenOrientation" />
+    </application>
+
+</manifest>

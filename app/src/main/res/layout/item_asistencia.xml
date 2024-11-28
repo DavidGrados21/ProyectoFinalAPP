@@ -1,0 +1,67 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="4dp"
+    android:layout_margin="16dp"
+
+    >
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+android:padding="16dp"
+android:gravity="center_horizontal">
+
+<!-- Texto del ID de Asistencia -->
+<TextView
+    android:id="@+id/tvIdAsistencia"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="ID Asistencia"
+    android:textSize="16sp"
+    android:layout_marginBottom="8dp" />
+
+<!-- Texto de la Fecha de Asistencia -->
+<TextView
+    android:id="@+id/tvFechaAsistencia"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Fecha Asistencia"
+    android:textSize="16sp"
+    android:layout_marginBottom="16dp" />
+
+<!-- Switch para Permitir Asistencia -->
+<Switch
+    android:id="@+id/switchPermitirAsistencia"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Permitir Asistencia"
+    android:textSize="16sp"
+    android:layout_marginBottom="24dp" />
+
+<!-- Botón para Generar QR -->
+<Button
+    android:id="@+id/btnGenerarQR"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Generar QR"
+    android:backgroundTint="#DC9105"
+    android:layout_marginBottom="16dp"
+    android:padding="12dp" />
+
+<!-- Botón para Ver Asistencia de Alumnos -->
+<Button
+    android:id="@+id/btnAsistenciaAlumnos"
+    android:layout_width="match_parent"
+    android:backgroundTint="#DC9105"
+
+    android:layout_height="wrap_content"
+    android:text="Asistencia Alumnos"
+    android:padding="12dp" />
+</LinearLayout>
+
+    </androidx.cardview.widget.CardView>

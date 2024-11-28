@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".DetallesCursoActivity">
+
+    <!-- CardView para los detalles del curso -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewDetallesCurso"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btnContainer">
+
+        <!-- Contenedor vertical para los textos -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tvNombreCursoDetalle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nombre del curso"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvCodigoCursoDetalle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Código del curso"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvHorarioDetalle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Horario"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvDiaSemanaDetalle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Día de la semana"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvProfesor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Profesor"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Contenedor de los botones -->
+    <LinearLayout
+        android:id="@+id/btnContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/cardViewDetallesCurso"
+        android:layout_marginTop="16dp">
+
+        <!-- Botón para agregar el curso -->
+        <Button
+            android:id="@+id/btnAgregarCurso"
+            android:backgroundTint="#F3A006"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agregar Curso"
+            android:layout_marginEnd="8dp" /> <!-- Espacio entre los botones -->
+
+        <!-- Botón para volver a escanear QR -->
+        <Button
+            android:id="@+id/btnEscanearQR"
+            android:backgroundTint="#F3A006"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Volver a Cursos" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
